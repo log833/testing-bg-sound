@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>BG Sound Test</title>
+</head>
+<body>
+
+  <button onclick="playMusic()">Test</button>
+
+  <audio id="bgMusic" loop>
+    <source src="GET_OUT.m4a" type="audio/mp4">
+  </audio>
+
+  <script>
+    function playMusic() {
+      const audio = document.getElementById("bgMusic");
+      audio.play();
+    }
+  </script>
+
+</body>
+</html>
