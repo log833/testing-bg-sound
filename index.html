@@ -2,19 +2,20 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>BG Sound Test</title>
+  <title>BG Sounnd Test</title>
 </head>
 <body>
 
-  <button onclick="playMusic()">Test</button>
+  <button onclick="playOnce()">Test</button>
 
-  <audio id="bgMusic" loop>
+  <audio id="sound">
     <source src="GET_OUT.m4a" type="audio/mp4">
   </audio>
 
   <script>
-    function playMusic() {
-      const audio = document.getElementById("bgMusic");
+    function playOnce() {
+      const audio = document.getElementById("sound");
+      audio.currentTime = 0;
       audio.play();
     }
   </script>
